@@ -33,6 +33,7 @@
           <!-- NAVLINKS -->
           <a href="#/about" class="nav-link">About</a>
           <a href="#/cars" class="nav-link">Cars 🚗</a>
+          <a href="#/houses" class="nav-link">Houses 🏠</a>
 
           <!-- FIXME add a link tag to get to your houses page -->
         </div>
@@ -89,6 +90,85 @@
             </div>
           </section>
         </div> -->
+
+
+    <!-- STUB form template -->
+
+    <section class="container-fluid">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1>Houses For Sale</h1>
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHouse"
+            aria-expanded="false" aria-controls="collapseExample">
+            List House
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-10 m-auto bg-primary">
+          <div class="collapse" id="collapseHouse">
+            <form onsubmit="app.HousesController.createHouse()">
+              <div class="my-3">
+                <input type="Name" class="form-control" id="houseName" placeholder="House Name">
+              </div>
+              <div class="my-3">
+                <input type="Year" class="form-control" id="houseYear" placeholder="Year Built">
+              </div>
+              <div class="my-3">
+                <input type="bedrooms" class="form-control" id="houseBedrooms" placeholder="Number of Bedrooms">
+              </div>
+              <div class="my-3">
+                <input type="bathrooms" class="form-control" id="houseBathrooms" placeholder="Number of Bathrooms">
+              </div>
+              <div class="my-3">
+                <input type="sqft" class="form-control" id="houseSqft" placeholder="Square Footage">
+              </div>
+              <div class="my-3">
+                <input type="price" class="form-control" id="housePrice" required placeholder="Price">
+              </div>
+              <div class="mb-3">
+                <label for="houseDescription" class="form-label">Home Description</label>
+                <textarea class="form-control" id="houseDescription" rows="3"></textarea>
+              </div>
+              <div class="my-3">
+                <input type="url" class="form-control" id="houseImg" required placeholder="House Img URL">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- STUB house view template -->
+
+    <!-- <section class="container-fluid">
+
+      <div id="houseListing" class="row">
+
+        <div class="col-10 m-auto p-3">
+
+          <div class="row elevation-5 mb-2">
+            <div class="col-4">
+              <img class="img-fluid house-img"
+                src="https://media.istockphoto.com/id/1442148484/photo/3d-rendering-of-modern-suburban-house-in-the-garden.webp?b=1&s=170667a&w=0&k=20&c=acVdz2wMQAu_M9ZXOuECxSJwoKavvgo1_ZJUr8pOYWA="
+                alt="House">
+            </div>
+            <div class="col-8">
+              <h1>House Name</h1>
+              <h2>House Year</h2>
+              <h2>Price</h2>
+              <h4>Number of Beds</h4>
+              <h4>Number of Baths</h4>
+              <h4>Square Footage</h4>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+
   </main>
 
   <!-- SECTION -->

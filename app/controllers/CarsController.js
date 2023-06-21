@@ -15,7 +15,7 @@ function _drawCars() {
 
 
 export class CarsController {
-  constructor () {
+  constructor() {
     // SECTION page load
     console.log('Cars Controller is loaded, here are the cars', AppState.cars);
     _drawCars()
@@ -34,6 +34,7 @@ export class CarsController {
 
     const carData = getFormData(form)
 
+    // @ts-ignore
     carData.ownedByGrandma = carData.ownedByGrandma == 'on' ? true : false
 
     console.log('car data!', carData);
